@@ -19,7 +19,7 @@ unsigned int factorial( unsigned int n );
 int main()
 {
     unsigned int n = 0;
-    for ( n = 0 ; n < 11 ; n++ )
+    for ( n = 0 ; n < 10 ; n++ )
     {
         Fact[n] = factorial(n); // call factorial() to do the calculation
     }
