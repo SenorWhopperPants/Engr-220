@@ -1,0 +1,10 @@
+|question62
+L2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+ResetLow => inst7.IN2
+L3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+L4 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

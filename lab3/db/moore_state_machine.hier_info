@@ -1,0 +1,27 @@
+|moore_state_machine
+L1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+ResetLow => inst3.ACLR
+ResetLow => inst.ACLR
+ResetLow => inst1.ACLR
+ResetLow => inst2.ACLR
+ResetLow => inst7.PRESET
+ResetLow => inst4.PRESET
+ResetLow => inst5.PRESET
+ResetLow => inst6.PRESET
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+Clock => inst3.CLK
+Clock => inst4.CLK
+Clock => inst5.CLK
+Clock => inst6.CLK
+Clock => inst7.CLK
+L2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+L3 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+L4 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+M1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+M2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+M3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+M4 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

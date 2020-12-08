@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, H:/engr220/lab4v1/arbiter.bdf
+source_file = 1, H:/engr220/lab4v1/Waveform.vwf
+source_file = 1, H:/engr220/lab4v1/Waveform1.vwf
+source_file = 1, H:/engr220/lab4v1/db/arbiter.cbx.xml
+design_name = arbiter
+instance = comp, \Clock~I , Clock, arbiter, 1
+instance = comp, \Reset~I , Reset, arbiter, 1
+instance = comp, \REQ1~I , REQ1, arbiter, 1
+instance = comp, \REQ0~I , REQ0, arbiter, 1
+instance = comp, \inst6~2 , inst6~2, arbiter, 1
+instance = comp, \inst8~9 , inst8~9, arbiter, 1
+instance = comp, \GNT0out~I , GNT0out, arbiter, 1
+instance = comp, \GNT1out~I , GNT1out, arbiter, 1

@@ -1,0 +1,9 @@
+Fitter Status : Successful - Wed Oct 02 12:54:19 2019
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : arbiter
+Top-level Entity Name : arbiter
+Family : MAX7000S
+Device : EPM7064SLC44-10
+Timing Models : Final
+Total macrocells : 6 / 64 ( 9 % )
+Total pins : 10 / 36 ( 28 % )

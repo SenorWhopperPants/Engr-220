@@ -1,0 +1,9 @@
+Fitter Status : Successful - Wed Sep 25 11:58:11 2019
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : moore_state_machine
+Top-level Entity Name : moore_state_machine
+Family : MAX7000S
+Device : EPM7032SLC44-10
+Timing Models : Final
+Total macrocells : 8 / 32 ( 25 % )
+Total pins : 14 / 36 ( 39 % )

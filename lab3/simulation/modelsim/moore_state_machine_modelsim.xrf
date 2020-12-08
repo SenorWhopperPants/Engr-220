@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, H:/engr220/lab3/moore_state_machine.bdf
+source_file = 1, H:/engr220/lab3/Waveform.vwf
+source_file = 1, H:/engr220/lab3/db/moore_state_machine.cbx.xml
+design_name = moore_state_machine
+instance = comp, \Clock~I , Clock, moore_state_machine, 1
+instance = comp, \ResetLow~I , ResetLow, moore_state_machine, 1
+instance = comp, \inst~3 , inst~3, moore_state_machine, 1
+instance = comp, \L4~I , L4, moore_state_machine, 1
+instance = comp, \L3~I , L3, moore_state_machine, 1
+instance = comp, \M4~I , M4, moore_state_machine, 1
+instance = comp, \M3~I , M3, moore_state_machine, 1
+instance = comp, \L2~I , L2, moore_state_machine, 1
+instance = comp, \L1~I , L1, moore_state_machine, 1
+instance = comp, \M2~I , M2, moore_state_machine, 1
+instance = comp, \M1~I , M1, moore_state_machine, 1

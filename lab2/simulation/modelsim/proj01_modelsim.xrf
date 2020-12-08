@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, H:/engr220/lab2/proj01.bdf
+source_file = 1, H:/engr220/lab2/Waveform.vwf
+source_file = 1, H:/engr220/lab2/db/proj01.cbx.xml
+design_name = proj01
+instance = comp, \C~output , C~output, proj01, 1
+instance = comp, \A~input , A~input, proj01, 1
+instance = comp, \B~input , B~input, proj01, 1

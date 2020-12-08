@@ -1,0 +1,56 @@
+/*
+ * Fib.c takes an array and converts it to the Fibonacci Sequence
+ *
+ * @author	Josh Bussis
+ * @date 	10/10/2019
+ * @class	Engr 220L
+ * @where	Calvin University
+ * @why		Lab 06 prelab
+ */
+ 
+ /*
+  * PSUEDO-CODE
+  * The overall algorithm is as follows:
+  *
+  *	int array[size]
+  *
+  * for item in array:
+  *		if the index is zero:
+  *			array[index] = 0
+  *		else if the index is one:
+  *			array[index] = 1
+  *		else:
+  *			array[index] = array[index - 2] + array[index - 1]
+  */
+  
+  //global array of 40 ints
+  int Fib[40];
+  
+  /*
+   * @brief 	calcFib() takes an array and fills it with the values of		
+   *			the Fibonacci Sequence based on the size of the array
+   *
+   * @inputs	array[] (int), array_size (int)
+   * @output	void
+   */
+   void calcFib(int array[], int array_size) {
+	   int i;
+	   // loop through the array and fill with the calculated values
+	   // of the Fibonacci Sequence
+	   for(i = 0; i < array_size; i++) {
+		   if (i == 0) {
+			   array[i] = 0;
+		   }
+		   else if (i == 1) {
+			   array[i] = 1;
+		   }
+		   else {
+			   array[i] = array[i-2] + array[i-1];
+		   }
+	   }
+   }
+   
+   int main() {
+	   // convert the array to the Fibonacci Sequence
+	   calcFib(Fib, 40);
+	   return 0;

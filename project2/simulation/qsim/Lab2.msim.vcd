@@ -1,0 +1,98 @@
+$comment
+	File created using the following command:
+		vcd file Lab2.msim.vcd -direction
+$end
+$date
+	Wed Sep 18 12:36:04 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Lab2_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # C $end
+$var wire 1 $ D $end
+$var wire 1 % SimpD $end
+$var wire 1 & sampler $end
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var wire 1 * A~dataout $end
+$var wire 1 + B~dataout $end
+$var wire 1 , C~dataout $end
+$var wire 1 - inst6~6_dataout $end
+$var wire 1 . inst6~9_dataout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+x&
+0'
+1(
+x)
+0*
+0+
+0,
+0-
+0.
+$end
+#50000
+1#
+1,
+0&
+#100000
+1"
+0#
+1+
+0,
+1&
+#150000
+1#
+1,
+0&
+#200000
+1!
+0"
+0#
+1*
+0+
+0,
+1&
+1.
+1-
+1%
+1$
+#250000
+1#
+1,
+0&
+0-
+0.
+0$
+0%
+#300000
+1"
+0#
+1+
+0,
+1&
+1.
+1-
+1%
+1$
+#350000
+1#
+1,
+0&
+#400000

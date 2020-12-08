@@ -1,0 +1,15 @@
+|arbiter
+GNT1out <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst.ACLR
+Reset => inst1.ACLR
+Reset => inst11.ACLR
+Reset => inst10.ACLR
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst11.CLK
+Clock => inst10.CLK
+REQ0 => inst11.DATAIN
+REQ1 => inst10.DATAIN
+GNT0out <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+

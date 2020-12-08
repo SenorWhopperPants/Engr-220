@@ -1,0 +1,6 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "altera_up_avalon_character_lcd.h": "c"
+    }
+}

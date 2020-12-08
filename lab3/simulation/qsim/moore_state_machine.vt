@@ -1,0 +1,432 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "09/25/2019 11:36:25"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    moore_state_machine
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module moore_state_machine_vlg_sample_tst(
+	Clock,
+	ResetLow,
+	sampler_tx
+);
+input  Clock;
+input  ResetLow;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(Clock or ResetLow)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module moore_state_machine_vlg_check_tst (
+	L1,
+	L2,
+	L3,
+	L4,
+	M1,
+	M2,
+	M3,
+	M4,
+	sampler_rx
+);
+input  L1;
+input  L2;
+input  L3;
+input  L4;
+input  M1;
+input  M2;
+input  M3;
+input  M4;
+input sampler_rx;
+
+reg  L1_expected;
+reg  L2_expected;
+reg  L3_expected;
+reg  L4_expected;
+reg  M1_expected;
+reg  M2_expected;
+reg  M3_expected;
+reg  M4_expected;
+
+reg  L1_prev;
+reg  L2_prev;
+reg  L3_prev;
+reg  L4_prev;
+reg  M1_prev;
+reg  M2_prev;
+reg  M3_prev;
+reg  M4_prev;
+
+reg  L1_expected_prev;
+reg  L2_expected_prev;
+reg  L3_expected_prev;
+reg  L4_expected_prev;
+reg  M1_expected_prev;
+reg  M2_expected_prev;
+reg  M3_expected_prev;
+reg  M4_expected_prev;
+
+reg  last_L1_exp;
+reg  last_L2_exp;
+reg  last_L3_exp;
+reg  last_L4_exp;
+reg  last_M1_exp;
+reg  last_M2_exp;
+reg  last_M3_exp;
+reg  last_M4_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:8] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 8'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	L1_prev = L1;
+	L2_prev = L2;
+	L3_prev = L3;
+	L4_prev = L4;
+	M1_prev = M1;
+	M2_prev = M2;
+	M3_prev = M3;
+	M4_prev = M4;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	L1_expected_prev = L1_expected;
+	L2_expected_prev = L2_expected;
+	L3_expected_prev = L3_expected;
+	L4_expected_prev = L4_expected;
+	M1_expected_prev = M1_expected;
+	M2_expected_prev = M2_expected;
+	M3_expected_prev = M3_expected;
+	M4_expected_prev = M4_expected;
+end
+
+
+
+// expected L1
+initial
+begin
+	L1_expected = 1'bX;
+	L1_expected = #399000 1'b0;
+	L1_expected = #1000 1'bX;
+	L1_expected = #399000 1'b0;
+end 
+
+// expected L2
+initial
+begin
+	L2_expected = 1'bX;
+	L2_expected = #399000 1'b0;
+	L2_expected = #1000 1'bX;
+	L2_expected = #399000 1'b0;
+end 
+
+// expected L3
+initial
+begin
+	L3_expected = 1'bX;
+	L3_expected = #399000 1'b0;
+	L3_expected = #1000 1'bX;
+	L3_expected = #399000 1'b0;
+end 
+
+// expected L4
+initial
+begin
+	L4_expected = 1'bX;
+	L4_expected = #399000 1'b0;
+	L4_expected = #1000 1'bX;
+	L4_expected = #399000 1'b0;
+end 
+
+// expected M1
+initial
+begin
+	M1_expected = 1'bX;
+	M1_expected = #399000 1'b0;
+	M1_expected = #1000 1'bX;
+	M1_expected = #399000 1'b0;
+end 
+
+// expected M2
+initial
+begin
+	M2_expected = 1'bX;
+	M2_expected = #399000 1'b0;
+	M2_expected = #1000 1'bX;
+	M2_expected = #399000 1'b0;
+end 
+
+// expected M3
+initial
+begin
+	M3_expected = 1'bX;
+	M3_expected = #399000 1'b0;
+	M3_expected = #1000 1'bX;
+	M3_expected = #399000 1'b0;
+end 
+
+// expected M4
+initial
+begin
+	M4_expected = 1'bX;
+	M4_expected = #399000 1'b0;
+	M4_expected = #1000 1'bX;
+	M4_expected = #399000 1'b0;
+end 
+// generate trigger
+always @(L1_expected or L1 or L2_expected or L2 or L3_expected or L3 or L4_expected or L4 or M1_expected or M1 or M2_expected or M2 or M3_expected or M3 or M4_expected or M4)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected L1 = %b | expected L2 = %b | expected L3 = %b | expected L4 = %b | expected M1 = %b | expected M2 = %b | expected M3 = %b | expected M4 = %b | ",L1_expected_prev,L2_expected_prev,L3_expected_prev,L4_expected_prev,M1_expected_prev,M2_expected_prev,M3_expected_prev,M4_expected_prev);
+	$display("| real L1 = %b | real L2 = %b | real L3 = %b | real L4 = %b | real M1 = %b | real M2 = %b | real M3 = %b | real M4 = %b | ",L1_prev,L2_prev,L3_prev,L4_prev,M1_prev,M2_prev,M3_prev,M4_prev);
+`endif
+	if (
+		( L1_expected_prev !== 1'bx ) && ( L1_prev !== L1_expected_prev )
+		&& ((L1_expected_prev !== last_L1_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port L1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", L1_expected_prev);
+		$display ("     Real value = %b", L1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_L1_exp = L1_expected_prev;
+	end
+	if (
+		( L2_expected_prev !== 1'bx ) && ( L2_prev !== L2_expected_prev )
+		&& ((L2_expected_prev !== last_L2_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port L2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", L2_expected_prev);
+		$display ("     Real value = %b", L2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_L2_exp = L2_expected_prev;
+	end
+	if (
+		( L3_expected_prev !== 1'bx ) && ( L3_prev !== L3_expected_prev )
+		&& ((L3_expected_prev !== last_L3_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port L3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", L3_expected_prev);
+		$display ("     Real value = %b", L3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_L3_exp = L3_expected_prev;
+	end
+	if (
+		( L4_expected_prev !== 1'bx ) && ( L4_prev !== L4_expected_prev )
+		&& ((L4_expected_prev !== last_L4_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port L4 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", L4_expected_prev);
+		$display ("     Real value = %b", L4_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_L4_exp = L4_expected_prev;
+	end
+	if (
+		( M1_expected_prev !== 1'bx ) && ( M1_prev !== M1_expected_prev )
+		&& ((M1_expected_prev !== last_M1_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M1_expected_prev);
+		$display ("     Real value = %b", M1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_M1_exp = M1_expected_prev;
+	end
+	if (
+		( M2_expected_prev !== 1'bx ) && ( M2_prev !== M2_expected_prev )
+		&& ((M2_expected_prev !== last_M2_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M2_expected_prev);
+		$display ("     Real value = %b", M2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_M2_exp = M2_expected_prev;
+	end
+	if (
+		( M3_expected_prev !== 1'bx ) && ( M3_prev !== M3_expected_prev )
+		&& ((M3_expected_prev !== last_M3_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M3_expected_prev);
+		$display ("     Real value = %b", M3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_M3_exp = M3_expected_prev;
+	end
+	if (
+		( M4_expected_prev !== 1'bx ) && ( M4_prev !== M4_expected_prev )
+		&& ((M4_expected_prev !== last_M4_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port M4 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", M4_expected_prev);
+		$display ("     Real value = %b", M4_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_M4_exp = M4_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#800000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module moore_state_machine_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Clock;
+reg ResetLow;
+// wires                                               
+wire L1;
+wire L2;
+wire L3;
+wire L4;
+wire M1;
+wire M2;
+wire M3;
+wire M4;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+moore_state_machine i1 (
+// port map - connection between master ports and signals/registers   
+	.Clock(Clock),
+	.L1(L1),
+	.L2(L2),
+	.L3(L3),
+	.L4(L4),
+	.M1(M1),
+	.M2(M2),
+	.M3(M3),
+	.M4(M4),
+	.ResetLow(ResetLow)
+);
+
+// Clock
+always
+begin
+	Clock = 1'b0;
+	Clock = #25000 1'b1;
+	#25000;
+end 
+
+// ResetLow
+initial
+begin
+	ResetLow = 1'b0;
+	ResetLow = #10000 1'b1;
+end 
+
+moore_state_machine_vlg_sample_tst tb_sample (
+	.Clock(Clock),
+	.ResetLow(ResetLow),
+	.sampler_tx(sampler)
+);
+
+moore_state_machine_vlg_check_tst tb_out(
+	.L1(L1),
+	.L2(L2),
+	.L3(L3),
+	.L4(L4),
+	.M1(M1),
+	.M2(M2),
+	.M3(M3),
+	.M4(M4),
+	.sampler_rx(sampler)
+);
+endmodule
+

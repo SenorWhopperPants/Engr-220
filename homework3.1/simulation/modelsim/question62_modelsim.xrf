@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, H:/engr220/homework3.1/question62.bdf
+source_file = 1, H:/engr220/homework3.1/Waveform.vwf
+source_file = 1, H:/engr220/homework3.1/Waveform1.vwf
+source_file = 1, H:/engr220/homework3.1/db/question62.cbx.xml
+design_name = question62
+instance = comp, \Clock~I , Clock, question62, 1
+instance = comp, \ResetLow~I , ResetLow, question62, 1
+instance = comp, \L4~I , L4, question62, 1
+instance = comp, \L3~I , L3, question62, 1
+instance = comp, \L2~I , L2, question62, 1
